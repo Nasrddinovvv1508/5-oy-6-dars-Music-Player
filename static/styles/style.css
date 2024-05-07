@@ -1,0 +1,56 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(174, 173, 173);
+}
+
+.track_card {
+    width: 450px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 450px;
+        height: 450px;
+        border-radius: 50px;
+        border: 2px solid black;
+        object-fit: cover;
+    }
+
+    .track_buttons {
+        margin-top: 30px;
+        display: flex;
+        gap: 30px;
+
+        button {
+            cursor: pointer;
+            padding: 15px 50px;
+            border: none;
+            background-color: black;
+            border-radius: 10px;
+            transition: all 0.5s;
+
+            i {
+                font-size: 30px;
+                color: white;
+                transition: all 0.5s;
+            }
+        }
+
+        button:hover {
+            background-color: #fff;
+
+            i {
+                color: black;
+            }
+        }
+    }
+}

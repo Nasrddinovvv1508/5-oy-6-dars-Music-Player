@@ -14,21 +14,26 @@
 
 <body>
 
-    <audio src="./static/audio/DrDre-Eminem-ForgotAboutDre.mp3"></audio>
+    <div class="container">
+        <audio src="./static/audio/DrDre-Eminem-ForgotAboutDre.mp3"></audio>
 
-    <div>
-        <button id="backward">
-            <i class="fa-solid fa-backward-step"></i>
-        </button>
-        <button id="play">
-            <i class="fa-solid fa-play"></i>
-        </button>
-        <button id="forward">
-            <i class="fa-solid fa-forward-step"></i>
-        </button>
+        <div class="track_card">
+            <img id="artist_pic" src="./static/img/DrDre-Eminem-ForgotAboutDre.png" alt="img">
+            <div class="track_buttons">
+                <button id="backward">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button id="play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="forward">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+            </div>
+        </div>
     </div>
 
-    <script src="static/JS/index.js"></script>
+    <script type="module" src="static/JS/index.js"></script>
 </body>
 
 </html>
