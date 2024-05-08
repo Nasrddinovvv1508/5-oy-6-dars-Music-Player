@@ -14,24 +14,35 @@
 
 <body>
 
-    <div class="container">
-        <audio src="./static/audio/DrDre-Eminem-ForgotAboutDre.mp3"></audio>
+    <main>
+        <div class="container">
+            <audio src="./static/audio/DrDre-Eminem-ForgotAboutDre.mp3"></audio>
 
-        <div class="track_card">
-            <img id="artist_pic" src="./static/img/DrDre-Eminem-ForgotAboutDre.png" alt="img">
-            <div class="track_buttons">
-                <button id="backward">
-                    <i class="fa-solid fa-backward-step"></i>
-                </button>
-                <button id="play">
-                    <i class="fa-solid fa-play"></i>
-                </button>
-                <button id="forward">
-                    <i class="fa-solid fa-forward-step"></i>
-                </button>
+            <div class="track_card">
+                <img id="artist_pic" src="./static/img/DrDre-Eminem-ForgotAboutDre.png" alt="img">
+                <center>
+                    <h1>DrDre-Eminem-ForgotAboutDre</h1>
+                </center>
+                <div class="change">
+                    <div>
+                        <span id="volume_number"></span>
+                        <input id="input_range" type="range" min="0" max="1" step="0.01">
+                    </div>
+                </div>
+                <div class="track_buttons">
+                    <button id="backward">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+                    <button id="play">
+                        <i id="play-pause" class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="forward">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script type="module" src="static/JS/index.js"></script>
 </body>
